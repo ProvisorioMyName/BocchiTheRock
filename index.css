@@ -6,13 +6,7 @@
   font-weight: 400;
   font-style: normal;
 }
-
-.akt-<uniquifier> {
-  font-family: "Akt", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
+*/
  :root{
     --bocchi: #FF4FA3;
     --nijika: #f7c600;

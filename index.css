@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 
-/* Mudei o padding, o overflow */
+
 body{
     background: linear-gradient(rgba(0,0,0,0.5)), url(imagens/fundo-phone.png) left center no-repeat;
     background-size: cover;
@@ -29,7 +29,8 @@ main{
     height: 100vh;
     display: flex;
     align-items: center;
-    padding: 40px;
+    padding: 0px 40px;
+    /* Mudei esse padding tava geral e agr está só dos lados */
 }
 section.container{
     width: 370px;

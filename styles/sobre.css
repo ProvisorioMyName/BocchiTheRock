@@ -5,7 +5,7 @@
     --nijika: #f7c600;
     --ryo: #1e4bff;
     --kita: #FF174D;
-    --fundo: #0e112cdd;
+    --fundo: #0e112cf4;
 }
 
 *{
@@ -293,31 +293,64 @@ section#persons > h2{
     text-shadow: 1px 1px 10px #ff4fa485;
 
 }
-section#persons .person-text{
+section#persons .text{
     width: 300px;
     text-align: center;
 }
-.person-text > p > span{
+section#persons .text > p > span{
     color: var(--bocchi);
 }
 section#persons .containerperson{
     width: 100%;
-    height: 100PX;
+    height: 120px;
     border-radius: 15px;
-    border: 2px solid var(--cor);
+    border: 1px solid var(--cor);
     margin: 10px 0px;
     display: flex;
+    overflow: hidden;
+}
+.person-img{
+    width: 110px;
+    height: 100%;
+    background: black var(--imagem) no-repeat;
+    background-size: cover;
+}
+.person-text{
+    flex: 1;
+    padding: 5px;
+}
+.person-text > p{
+    font-size: 0.8em;
+    line-height: 1.5;
+    padding-left: 15px;
+
+}
+.person-text h4{
+    color: var(--cor);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 5px;
+}
+.person-text h5{
+    font-weight: 500;
+    font-size: .9em;
+    margin: 4px 0px 5px;
+    padding-left: 15px;
 }
 
 section#persons .rosa{
     --cor: var(--bocchi);
+    --imagem: url("../imagens/person/hitori-icon.jpg")
 }
 section#persons .amarelo{
     --cor: var(--nijika);
+    --imagem: url("../imagens/person/nijika-icon.jpg");
 }
 section#persons .azul{
     --cor: var(--ryo);
+    --imagem: url("../imagens/person/yamada-icon.jpg");
 }
 section#persons .vermelho{
     --cor: var(--kita);
+    --imagem: url("../imagens/person/kita-icon.jpg");
 }

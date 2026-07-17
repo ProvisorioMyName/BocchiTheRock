@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    section#linhadotempo{
+        height: 700px;
+    }
+    section#linhadotempo .tempo-item{
+        height: 500px;
+    }
+    section#linhadotempo .tempo-img{
+        height: 350px;
+        background-position: center center;
+    }
+}

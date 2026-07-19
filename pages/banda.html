@@ -24,19 +24,19 @@
                 <p>Conheça a Kessoku Band</p>
             </div>
             <div class="icon-box">
-                <div class="icon hitori">
+                <div class="icon" id="hitori" onclick="selecPersonagem('hitori')">
                     <div class="icon-img"></div>
                     <p>Hitori</p>
                 </div>
-                <div class="icon nijika">
+                <div class="icon"  id="nijika" onclick="selecPersonagem('nijika')">
                     <div class="icon-img"></div>
                     <p>Nijika</p>
                 </div>
-                <div class="icon ryo">
+                <div class="icon"  id="ryo" onclick="selecPersonagem('ryo')">
                     <div class="icon-img"></div>
                     <p>Ryo</p>
                 </div>
-                <div class="icon kita">
+                <div class="icon" id="kita" onclick="selecPersonagem('kita')">
                     <div class="icon-img"></div>
                     <p>Kita</p>
                 </div>
@@ -50,13 +50,14 @@
                     <h2>Hitori Gotoh</h2>
                     <div class="person-cargo">
                         <p>Guitarrista</p>
-                        <img src="../imagens/icones/graves.png" alt="Guitarra">
+                        <img src="../imagens/icones/graves.png" alt="Guitarra" id="inst1">
+                        <img src="../imagens/icones/microfone.png" alt="" id="inst2">
                     </div>
-                    <p>Hitori Gotoh(Bocchi) é uma estudante extremamente tímida e com forte ansiedade social, mas que
-                        esconde um talento excepcional na guitarra. Após passar anos praticando sozinha trancada em seu
-                        armário e postando vídeos na internet como "guitarhero", ela foi convidada a se juntar à Kessoku
-                        Band, iniciando sua jornada para superar seus medos e se conectar com os outros através da
-                        música.</p>
+                    <p id="txt">Hitori Gotoh(Bocchi) é uma estudante extremamente tímida e com forte ansiedade social, mas que
+                    esconde um talento excepcional na guitarra. Após passar anos praticando sozinha trancada em seu
+                    armário e postando vídeos na internet como "guitarhero", ela foi convidada a se juntar à Kessoku
+                    Band, iniciando sua jornada para superar seus medos e se conectar com os outros através da
+                    música.</p>
                 </div>
             </div>
             <div id="infos">
@@ -65,7 +66,7 @@
                     <div class="info-img">
                         <img src="../imagens/hitori-icons/calendario-rosa.png" alt="Calendário">
                     </div>
-                    <p><span>Aniversário:</span> 21 dee fevereiro</p>
+                    <p><span>Aniversário:</span> 21 de fevereiro</p>
                 </div>
                 <div class="info-text">
                     <div class="info-img">
@@ -114,6 +115,9 @@
             </div>
         </section>
     </main>
+
+
+    <script src="../assets/banda.js"></script>
 </body>
 
 </html>

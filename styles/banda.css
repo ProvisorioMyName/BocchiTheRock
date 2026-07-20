@@ -6,6 +6,7 @@
     --ryo: #1e4bff;
     --kita: #FF174D;
     --fundo: #0e112cf4;
+    --marker: #FF4FA3;
 }
 
 * {
@@ -45,7 +46,7 @@ main {
 /* icons */
 
 section#box-banda {
-    width: 100%;
+    min-width: 100%;
     height: 230px;
 }
 
@@ -73,7 +74,7 @@ section#box-banda {
 }
 
 .icon {
-    width: 100px;
+    min-width: 100px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -82,7 +83,7 @@ section#box-banda {
 }
 
 .icon-img {
-    width: 100px;
+    min-width: 100px;
     height: 100px;
     background: #0e112c var(--Iconimg)center center no-repeat;
     background-size: cover;
@@ -118,7 +119,7 @@ section#box-banda {
 /* Perfil */
 
 section#perfil {
-    width: 100%;
+    min-width: 100%;
     min-height: 980px;
     background-color: var(--fundo);
     border: 1px solid var(--bocchi);
@@ -134,7 +135,7 @@ section#perfil {
 }
 
 .person-img {
-    width: 180px;
+    min-width: 180px;
     height: 100%;
     background: #0e112c url('../imagens/person/hitori-perfil.jpg') center center no-repeat;
     background-size: cover;
@@ -159,7 +160,7 @@ section#perfil {
 .person-cargo {
     display: flex;
     align-items: center;
-    width: 100%;
+    max-width: 230px;
     height: 20px;
     margin: 10px 0px;
     color: var(--bocchi);
@@ -168,9 +169,10 @@ section#perfil {
     display: none;
 }
 .person-cargo img {
-    width: 30px;
-    height: 30px;
+    max-width: 30px;
+    max-height: 30px;
     margin-left: 10px;
+    object-fit: contain;
 }
 
 .subtitulo {
@@ -200,8 +202,11 @@ section#perfil {
     border-bottom: 1px solid rgba(128, 128, 128, 0.075);
 }
 
-.info-text>p>span {
+.info-text .color{
     color: var(--bocchi);
+}
+.info-text .valor{
+    color: white;
 }
 
 .info-img {
@@ -234,6 +239,5 @@ section#perfil {
     color: white;
 }
 .curio-text li::marker{
-    color: var(--bocchi)
-
+    color: var(--marker)
 }

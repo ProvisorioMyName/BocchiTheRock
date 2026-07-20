@@ -24,6 +24,12 @@ const personagens = {
         'O',
         '1° Ano do Ensino Médio',
     ],
+    curiosidades: [
+      'Entra em pânico facilmente e costuma derreter ou virar poeira cosmicamente quando fica sob pressão social.',
+      'Costuma se esconder dentro de uma caixa de papelão ou em armários para se sentir segura.',
+      'Embora tenha pavor de interagir com o público, sua habilidade na guitarra é o verdadeiro pilar técnico da banda durante momentos de crise.',
+      'Seu maior sonho no inicio era apenas se tornar popular na escola e conseguir amigos através de música.',
+    ],
 
 
   },
@@ -51,6 +57,15 @@ const personagens = {
         'Doces ou bubble Tea',
         'A',
         '1° Ano do Ensino Médio'
+    ],
+    curiosidades:[
+      'Cuida de todas as tarefas burocráticas da banda, agindo quase como uma "mãe" ou gerente do grupo devido ao seu senso de responsabilidade.',
+
+'Foi a responsável por encontrar Bocchi em um parque e convidá-la para salvar a primeira apresentação da banda.',
+
+'Possui uma ahoge (mecha e cabelo espetada para cima) muito icônica que se move de acordo com suas emoções.',
+
+'Sua determinação em fazer a banda dar certo é motivada pelo profundo carinho que tem pelo local de shows criado pela irmã.',
     ],    
   },
   ryo: {
@@ -77,6 +92,12 @@ const personagens = {
         'Qualquer coisa barata',
         'A',
         '1° Ano do Ensino Médio',
+    ],
+    curiosidades:[
+      'É uma pessoa muito ligado ao dinheiro, mas vive constantemente sem fundos porque gasta tudo comprando instrumentos musicais e equipamentos',
+      'Sua relação com Nijika é baseada em uma longa amizade; Nijika é quem constuma trazê-la de volta e economizar seus gastos.',
+      'Ryo tem uma mente extremamente criativa, enxergando o processo de composição musical como algo artístico, único e quase espiritual.',
+      'Sua forma de tocar baixo traz uma função sólida, groove e o preenchimento estético perfeito para a sociedade rock da banda.',
     ],
    },
 
@@ -105,6 +126,12 @@ const personagens = {
         'A',
         '1° Ano do Ensino Médio'
         ],
+      curiosidades:[
+        'Quase desistiu da banda logo no início por ter mentido que sabia tocar guitarra, mas voltou após se encorajada por Bocchi.',
+        'Sua energia contagiante e presença brilhante são o coração das redes sociais e do markting da banda.',
+        'Admira secretamente a dedicação, o talento e a resiliência da Bocchi e Nijika.',
+        'O apelido "Kita-ura" é usado por ela ser uma verdadeira "social butterfly" (borboleta social) dentro e fora da internet.',
+      ],
    },
 
 }
@@ -116,12 +143,26 @@ function selecPersonagem(id){
     atualizarPerfil(personagem);
     atualizarInfo(personagem);
     atualizarCurio(personagem);
+
+
+
+  let border = document.querySelectorAll('#perfil, #infos, #curiosidades')
+
+ border.forEach(function(b){
+  b.style.borderColor = personagem.cor
+ })
+
+  let Tinfo = document.querySelectorAll('.subtitulo')
+  Tinfo.forEach(function(p){
+    p.style.color = personagem.cor
+    p.style.textShadow = personagem.Tsombra
+})
 }
 
 
 function atualizarPerfil(personagem) {
-  let perfil = document.getElementById("perfil");
-  let personImg = document.querySelector(".person-img");
+  let perfil = document.getElementById("perfil")
+  let personImg = document.querySelector(".person-img")
   let nome = document.querySelector('.person-text h2')
   let cargo = document.querySelector('.person-cargo p')
   let inst1 = document.getElementById('inst1')
@@ -129,7 +170,6 @@ function atualizarPerfil(personagem) {
   let sobre = document.getElementById('txt')
 
 
-  perfil.style.borderColor = personagem.cor;
   
   personImg.style.backgroundImage = `url('${personagem.foto}')`;
 
@@ -153,17 +193,31 @@ function atualizarPerfil(personagem) {
 }
 
 function atualizarInfo(personagem){
-    let border = document.getElementById('infos')
-    let Tinfo = document.querySelector('.subtitulo')
-    let imagensIcones = document.querySelectorAll('.info-img img')
-
-    border.style.borderColor = personagem.cor
-
-    Tinfo.style.color = personagem.cor
-    Tinfo.style.textShadow = personagem.Tsombra
+    let imagensIcones = document.querySelectorAll('.info-img > img')
+    let valores = document.querySelectorAll('.valor')
+    let topico = document.querySelectorAll('.color')
 
     for(let i = 0; i < imagensIcones.length; i++){
         imagensIcones[i].src = personagem.icones[i]
     }
 
+    topico.forEach(function(span){
+      span.style.color = personagem.cor
+    })
+
+    for(let v = 0; v < valores.length; v++){
+      valores[v].innerText = personagem.informações[v]
+    }
+}
+
+function atualizarCurio(personagem){
+    let list = document.querySelectorAll('.curio-text li')
+
+    list.forEach(function(mark){
+    mark.style.setProperty('--marker', personagem.cor)
+    })
+
+    for(t = 0; t < list.length; t++){
+      list[t].innerText = personagem.curiosidades[t]
+    }
 }

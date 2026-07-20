@@ -1,123 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banda</title>
-    <link rel="stylesheet" href="../styles/banda.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="../styles/banda.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <a href="../pages/sobre.html">Sobre</a>
-            <a href="../pages/banda.html">Banda</a>
-        </nav>
+      <nav>
+        <a href="../pages/sobre.html">Sobre</a>
+        <a href="../pages/banda.html">Banda</a>
+      </nav>
     </header>
     <main>
-        <!-- Icones -->
-        <section id="box-banda">
-            <div class="icon-titulo">
-                <h1>Personagens</h1>
-                <p>Conheça a Kessoku Band</p>
+      <!-- Icones -->
+      <section id="box-banda">
+        <div class="icon-titulo">
+          <h1>Personagens</h1>
+          <p>Conheça a Kessoku Band</p>
+        </div>
+        <div class="icon-box">
+          <div class="icon" id="hitori" onclick="selecPersonagem('hitori')">
+            <div class="icon-img"></div>
+            <p>Hitori</p>
+          </div>
+          <div class="icon" id="nijika" onclick="selecPersonagem('nijika')">
+            <div class="icon-img"></div>
+            <p>Nijika</p>
+          </div>
+          <div class="icon" id="ryo" onclick="selecPersonagem('ryo')">
+            <div class="icon-img"></div>
+            <p>Ryo</p>
+          </div>
+          <div class="icon" id="kita" onclick="selecPersonagem('kita')">
+            <div class="icon-img"></div>
+            <p>Kita</p>
+          </div>
+        </div>
+      </section>
+      <!-- Perfil -->
+      <section id="perfil">
+        <div id="person">
+          <div class="person-img"></div>
+          <div class="person-text">
+            <h2>Hitori Gotoh</h2>
+            <div class="person-cargo">
+              <p>Guitarrista</p>
+              <img
+                src="../imagens/icones/graves.png"
+                alt="Guitarra"
+                id="inst1"
+              />
+              <img src="../imagens/icones/microfone.png" alt="" id="inst2" />
             </div>
-            <div class="icon-box">
-                <div class="icon" id="hitori" onclick="selecPersonagem('hitori')">
-                    <div class="icon-img"></div>
-                    <p>Hitori</p>
-                </div>
-                <div class="icon"  id="nijika" onclick="selecPersonagem('nijika')">
-                    <div class="icon-img"></div>
-                    <p>Nijika</p>
-                </div>
-                <div class="icon"  id="ryo" onclick="selecPersonagem('ryo')">
-                    <div class="icon-img"></div>
-                    <p>Ryo</p>
-                </div>
-                <div class="icon" id="kita" onclick="selecPersonagem('kita')">
-                    <div class="icon-img"></div>
-                    <p>Kita</p>
-                </div>
+            <p id="txt">
+              Hitori Gotoh(Bocchi) é uma estudante extremamente tímida e com
+              forte ansiedade social, mas que esconde um talento excepcional na
+              guitarra. Após passar anos praticando sozinha trancada em seu
+              armário e postando vídeos na internet como "guitarhero", ela foi
+              convidada a se juntar à Kessoku Band, iniciando sua jornada para
+              superar seus medos e se conectar com os outros através da música.
+            </p>
+          </div>
+        </div>
+        <div id="infos">
+          <p class="subtitulo">Informações Gerais</p>
+          <div class="info-text">
+            <div class="info-img">
+              <img
+                src="../imagens/hitori-icons/calendario-rosa.png"
+                alt="Calendário"
+              />
             </div>
-        </section>
-        <!-- Perfil -->
-        <section id="perfil">
-            <div id="person">
-                <div class="person-img"></div>
-                <div class="person-text">
-                    <h2>Hitori Gotoh</h2>
-                    <div class="person-cargo">
-                        <p>Guitarrista</p>
-                        <img src="../imagens/icones/graves.png" alt="Guitarra" id="inst1">
-                        <img src="../imagens/icones/microfone.png" alt="" id="inst2">
-                    </div>
-                    <p id="txt">Hitori Gotoh(Bocchi) é uma estudante extremamente tímida e com forte ansiedade social, mas que
-                    esconde um talento excepcional na guitarra. Após passar anos praticando sozinha trancada em seu
-                    armário e postando vídeos na internet como "guitarhero", ela foi convidada a se juntar à Kessoku
-                    Band, iniciando sua jornada para superar seus medos e se conectar com os outros através da
-                    música.</p>
-                </div>
+            <p><span class="color">Aniversário:</span> <span class="valor">21 de fevereiro</span></p>
+          </div>
+          <div class="info-text">
+            <div class="info-img">
+              <img src="../imagens/hitori-icons/altura-rosa.png" alt="Altura" />
             </div>
-            <div id="infos">
-                <p class="subtitulo">Informações Gerais</p>
-                <div class="info-text">
-                    <div class="info-img">
-                        <img src="../imagens/hitori-icons/calendario-rosa.png" alt="Calendário">
-                    </div>
-                    <p><span>Aniversário:</span>21 de fevereiro</p>
-                </div>
-                <div class="info-text">
-                    <div class="info-img">
-                        <img src="../imagens/hitori-icons/altura-rosa.png" alt="Altura">
-                    </div>
-                    <p><span>Altura:</span> 156cm</p>
-                </div>
-                <div class="info-text">
-                    <div class="info-img">
-                        <img src="../imagens/hitori-icons/graves-rosa.png" alt="Guitarra">
-                    </div>
-                    <p><span>Instrumento:</span> Guitarra</p>
-                </div>
-                <div class="info-text">
-                    <div class="info-img">
-                        <img src="../imagens/hitori-icons/comida-rosa.png" alt="Comida">
-                    </div>
-                    <p><span>Comida Favorita:</span>Yakisoba Pan</p>
-                </div>
-                <div class="info-text">
-                    <div class="info-img">
-                        <img src="../imagens/hitori-icons/gota-rosa.png" alt="Sangue">
-                    </div>
-                    <p><span>Tipo Sanguíneo:</span>O</p>
-                </div>
-                <div class="info-text">
-                    <div class="info-img">
-                        <img src="../imagens/hitori-icons/diplomado-rosa.png" alt="Béca">
-                    </div>
-                    <p><span>Ano Escolar:</span>1° Ano do Ensino Médio</p>
-                </div>
+            <p><span class="color">Altura:</span> <span class="valor">156cm</span></p>
+          </div>
+          <div class="info-text">
+            <div class="info-img">
+              <img
+                src="../imagens/hitori-icons/graves-rosa.png"
+                alt="Guitarra"
+              />
             </div>
-            <div id="curiosidades">
-                <p class="subtitulo">Curiosidades</p>
-                <div class="curio-text">
-                    <ul>
-                        <li>Entra em pânico facilmente e costuma derreter ou virar poeira cosmicamente quando fica sob
-                            pressão social.</li>
-                        <li>Costuma se esconder dentro de uma caixa de papelão ou em armários para se sentir segura.</li>
-                        <li>Embora tenha pavor de interagir com o público, sua habilidade na guitarra é o verdadeiro pilar
-                        técnico da banda durante momentos de crise.</li>
-                        <li>Seu maior sonho no inicio era apenas se tornar popular na escola e conseguir amigos através de
-                        música.</li>
-                    </ul>
-                </div>
+            <p><span class="color">Instrumento:</span> <span class="valor">Guitarra</span></p>
+          </div>
+          <div class="info-text">
+            <div class="info-img">
+              <img src="../imagens/hitori-icons/comida-rosa.png" alt="Comida" />
             </div>
-        </section>
+            <p><span class="color">Comida Favorita:</span> <span class="valor"> Yakisoba Pan </span></p>
+          </div>
+          <div class="info-text">
+            <div class="info-img">
+              <img src="../imagens/hitori-icons/gota-rosa.png" alt="Sangue" />
+            </div>
+            <p><span class="color">Tipo Sanguíneo:</span> <span class="valor"> O </span></p>
+          </div>
+          <div class="info-text">
+            <div class="info-img">
+              <img
+                src="../imagens/hitori-icons/diplomado-rosa.png"
+                alt="Béca"
+              />
+            </div>
+            <p><span class="color">Ano Escolar:</span> <span class="valor"> 1° Ano do Ensino Médio </span></p>
+          </div>
+        </div>
+        <div id="curiosidades">
+          <p class="subtitulo">Curiosidades</p>
+          <div class="curio-text">
+            <ul>
+              <li>
+                Entra em pânico facilmente e costuma derreter ou virar poeira
+                cosmicamente quando fica sob pressão social.
+              </li>
+              <li>
+                Costuma se esconder dentro de uma caixa de papelão ou em
+                armários para se sentir segura.
+              </li>
+              <li>
+                Embora tenha pavor de interagir com o público, sua habilidade na
+                guitarra é o verdadeiro pilar técnico da banda durante momentos
+                de crise.
+              </li>
+              <li>
+                Seu maior sonho no inicio era apenas se tornar popular na escola
+                e conseguir amigos através de música.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
-
     <script src="../assets/banda.js"></script>
-</body>
-
+  </body>
 </html>

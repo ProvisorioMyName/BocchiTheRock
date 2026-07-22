@@ -135,7 +135,7 @@ section#perfil {
 }
 
 .person-img {
-    min-width: 180px;
+    min-width: 185px;
     height: 100%;
     background: #0e112c url('../imagens/person/hitori-perfil.jpg') center center no-repeat;
     background-size: cover;
@@ -144,11 +144,13 @@ section#perfil {
 }
 
 .person-text {
-    width: 210px;
+    min-width: 210px;
+    height: 100%;
+    margin-right: 5px;
 }
 
-.person-text>p {
-    font-size: 14px;
+.person-text > p {
+    font-size: 0.8rem
 }
 
 .person-text>h2 {
@@ -164,6 +166,7 @@ section#perfil {
     height: 20px;
     margin: 10px 0px;
     color: var(--bocchi);
+    font-size: 0.9em;
 }
 #inst2{
     display: none;
@@ -171,9 +174,10 @@ section#perfil {
 .person-cargo img {
     max-width: 30px;
     max-height: 30px;
-    margin-left: 10px;
+    margin-left: 5px;
     object-fit: contain;
 }
+
 
 .subtitulo {
     color: var(--bocchi);

@@ -1,10 +1,18 @@
 @charset "UTF-8";
 
+ :root{
+    --bocchi: #FF4FA3;
+}
+
 @media screen and (min-width: 768px){
     body{
         background: linear-gradient(rgba(0, 0, 0, 0.5)), url(imagens/fundo-inicio-tablet.png) center no-repeat;
         background-size: cover;
     }
+    body::before{
+        display: none;
+    }
+
     article > h1{
         font-size: 5rem;
     }
@@ -14,7 +22,7 @@
     }
     .botoes a{
         width: 270px;
-        height: 40px;
+        height: 50px;
     }
 }
 
@@ -22,6 +30,14 @@
     body{
         background: linear-gradient(rgba(0, 0, 0, 0.5)), url(imagens/fundo-inicio.png) center no-repeat;
         background-size: cover;
+    }
+    section.container{
+         padding-top: 130px;
+         padding-left: 80px;
+
+    }
+    article > h1{
+        font-size: 100px;
     }
     .botoes a:hover{
         background-color: #6a2144;

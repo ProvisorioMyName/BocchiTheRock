@@ -185,7 +185,7 @@ section#temas .vermelho{
 
 .info-box{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 15px;
     border:2px solid var(--bocchi);
     border-radius:15px;

@@ -91,7 +91,7 @@ main > p > span{
 section#temas{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 25px;
     margin-bottom: 10px;
 }
 .topic{
@@ -105,6 +105,7 @@ section#temas{
     text-align: center;
     padding: 10px;
     border: 2px solid var(--cor);
+    border-bottom: 5px solid var(--cor);
 }
 .topic > p{
     font-size: 11px;
@@ -125,6 +126,7 @@ section#temas .rosa{
     --icone: url("../imagens/icones/graves.png");
     background: linear-gradient(135deg, #FF4FA359, #1A1A33);
     backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px #FF4FA3, 0 0 10px #ff4fa4a2;
 
 }
 section#temas .amarelo{
@@ -132,18 +134,21 @@ section#temas .amarelo{
     --icone: url("../imagens/icones/feliz.png");
     background: linear-gradient(135deg, #f7c60059, #1A1A33);
     backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px #f7c600, 0 0 10px #f7c60042;
 }
 section#temas .azul{
     --cor: var(--ryo);
     --icone: url("../imagens/icones/plantar.png");
     background: linear-gradient(135deg, #1e4bff59, #1A1A33);
     backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px #1e4bff, 0 0 10px #1e4bff42;
 }
 section#temas .vermelho{
     --cor:var(--kita);
     --icone: url("../imagens/icones/estrela.png");
     background: linear-gradient(135deg, #ff174d59, #1A1A33);
     backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px #FF174D, 0 0 10px #FF174D42;
 }
 /* seção das informações */
 
@@ -313,14 +318,14 @@ section#persons > h2{
     text-shadow: 1px 1px 10px #ff4fa485;
 
 }
-section#persons .text{
+.text{
     text-align: center;
     font-size: 14px
 }
-section#persons .text > p > span{
+.text > p > span{
     color: var(--bocchi);
 }
-section#persons .containerperson{
+ .containerperson{
     width: 100%;
     min-height: 135px;
     border-radius: 15px;
@@ -347,7 +352,6 @@ section#persons .containerperson{
     font-size: 0.8em;
     line-height: 1.5;
     padding-left: 15px;
-
 }
 .person-text h4{
     color: var(--cor);
@@ -358,7 +362,7 @@ section#persons .containerperson{
 .person-text h5{
     font-weight: 500;
     font-size: .9em;
-    margin: 4px 0px 5px;
+    margin: 5px 0px;
     padding-left: 15px;
 }
 

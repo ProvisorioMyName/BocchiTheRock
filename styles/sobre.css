@@ -195,7 +195,7 @@ section#temas .vermelho{
     border-radius:15px;
     background: var(--fundo);
     padding: 15px;
-    display: block;
+    display: none;
 }
 .info-box h2{
     color: var(--bocchi);

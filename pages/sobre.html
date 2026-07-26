@@ -67,25 +67,25 @@
             <p class="subtitulo">Informações</p>
             <section id="informacoes">
                 <div class="cards">
-                    <button>
+                    <button onclick="selectInfo('episodios')">
                         <div class="info-icon">
                             <img src="../imagens/icones/tv.png" alt="Televisão" />
                         </div>
                         <p>Episódios</p>
                     </button>
-                    <button>
+                    <button onclick="selectInfo('genero')">
                         <div class="info-icon">
                             <img src="../imagens/icones/musica.png" alt="Nota musical" />
                         </div>
                         <p>Gênero</p>
                     </button>
-                    <button>
+                    <button onclick="selectInfo('lancamento')">
                         <div class="info-icon">
                             <img src="../imagens/icones/calendario.png" alt="Calendário" />
                         </div>
                         <p>Lançamento</p>
                     </button>
-                    <button>
+                    <button onclick="selectInfo('estudio')">
                         <div class="info-icon">
                             <img src="../imagens/icones/companhia.png" alt="Companhia" />
                         </div>
@@ -93,8 +93,8 @@
                     </button>
                 </div>
                 <div class="info-box">
-                    <h2>Episódios</h2>
-                    <p>12 Episódios</p>
+                    <h2 id="titulo">Episódios</h2>
+                    <p id="conteudo">12 Episódios</p>
                 </div>
             </section>
             <p class="subtitulo">Linha do tempo</p>
@@ -190,6 +190,7 @@
             </section>
         </div>
     </main>
+    <script src="../assets/sobre.js"></script>
 </body>
 
 </html>

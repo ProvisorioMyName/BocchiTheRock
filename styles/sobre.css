@@ -47,7 +47,7 @@ body{
         rgba(0, 0, 0, .85) 20%,
         #000 60%
     );
-    padding: 25px;
+    padding: 0px 25px 25px 25px;
 }
 /* navebar */
 nav{
@@ -78,7 +78,7 @@ main > h1{
     padding-left: 25px;
 }
 main > p{
-    width: 250px;
+    max-width: 250px;
     font-size: 0.7rem;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.067);
     margin-bottom: 10px;
@@ -93,9 +93,8 @@ section#temas{
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     margin-bottom: 10px;
-    padding: 0px 25px;
 }
-section#temas .topic{
+.topic{
     min-width: 140px;
     height: 180px;
     border-radius: 15px;
@@ -110,12 +109,12 @@ section#temas .topic{
 .topic > p{
     font-size: 11px;
 }
-section#temas .topic > h2{
+.topic > h2{
     color: var(--cor);
     font-weight: 500;
     font-size: 17px;
 }
-section#temas .icon{
+.icon{
     min-width: 50px;
     height: 50px;
     background: transparent var(--icone) no-repeat center;
@@ -219,7 +218,7 @@ section#linhadotempo{
 section#linhadotempo .box-linha{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 section#linhadotempo .item{
@@ -229,9 +228,8 @@ section#linhadotempo .item{
     flex-direction: column;
 }
 section#linhadotempo .item p{
-    font-size: 10px;
+    font-size: 11px;
     text-align: center;
-    line-height: 1.2;
     margin-top: 10px;
 }
 section#linhadotempo .tempo-bnt{
@@ -316,7 +314,6 @@ section#persons > h2{
 
 }
 section#persons .text{
-    width: 300px;
     text-align: center;
     font-size: 14px
 }
@@ -335,6 +332,7 @@ section#persons .containerperson{
 .person-img{
     max-width: 110px;
     min-height: 100px;
+    border-right: 1px solid var(--cor);
 }
 .person-img img{
     width: 100%;

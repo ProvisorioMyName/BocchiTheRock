@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 450px) and ( max-width: 768px){
+    main > h1{
+        font-size: 3.5rem;
+    }
+    main > p{
+        max-width: 260px;
+        font-size: 0.8rem;
+    }
+    /* Temas */
+    .topic > h2{
+        font-size: 19px;
+    }
+    .topic > p{
+        font-size: 13px;
+    }
+
+    /* cards de info */
+
+    .cards button{
+        min-width: 90px;
+        font-size: 13px;
+    }
+}

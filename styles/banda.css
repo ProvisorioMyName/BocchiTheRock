@@ -120,7 +120,7 @@ section#box-banda {
 
 section#perfil {
     width: 100%;
-    min-height: 1050px;
+    min-height: 1000px;
     background-color: var(--fundo);
     border: 1px solid var(--bocchi);
     border-radius: 20px;
@@ -144,7 +144,7 @@ section#perfil {
 }
 
 .person-text {
-    min-width: 145px;
+    max-width: 150px;
     height: 100%;
     margin-right: 5px;
 }
@@ -228,7 +228,7 @@ section#perfil {
 
 #curiosidades {
     width: 100%;
-    min-height: 320px;
+    min-height: 290px;
     padding: 10px;
     margin-top: 10px;
     border: 1px solid var(--bocchi);

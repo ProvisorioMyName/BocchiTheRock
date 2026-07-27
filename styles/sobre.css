@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
  :root{
-    --bocchi: #e62281;
+    --bocchi: #FF4FA3;
     --nijika: #f7c600;
     --ryo: #1e4bff;
     --kita: #FF174D;
@@ -211,7 +211,7 @@ section#temas .vermelho{
 
 section#linhadotempo{
     width: 100%;
-    min-height: 560px;
+    min-height: 500px;
     border: 2px solid var(--bocchi);
     background-color: var(--fundo);
     border-radius: 10px;
@@ -220,24 +220,20 @@ section#linhadotempo{
     flex-direction: column;
     align-items: center;
 }
-section#linhadotempo .box-linha{
+.box-linha{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-section#linhadotempo .item{
+.item{
     min-width: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-section#linhadotempo .item p{
-    font-size: 11px;
-    text-align: center;
-    margin-top: 10px;
-}
-section#linhadotempo .tempo-bnt{
+
+ .tempo-bnt{
     min-width: 40px;
     min-height: 40px;
     border-radius: 50%;
@@ -250,15 +246,15 @@ section#linhadotempo  > i{
     color: var(--bocchi);
     margin-top: 10px;
 }
-section#linhadotempo .tempo-item{
+.tempo-item{
     width: 100%;
     min-height: 370px;
-    border: 2px solid var(--bocchi);
+    border: 1px solid var(--bocchi);
     border-radius: 15px;
     padding: 20px;
 }
 
-section#linhadotempo .tempo-titulo{
+.tempo-titulo{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -273,11 +269,11 @@ section#linhadotempo span{
     justify-content: center;
     font-size: 1.1em;
 }
-section#linhadotempo .tempo-titulo p{
+.tempo-titulo p{
     margin-bottom: 10px;
     font-size: 0.9em;
 }
-section#linhadotempo .tempo-img{
+ .tempo-img{
     width: 100%;
     height: 210px;
     border: 1px solid var(--bocchi);
@@ -286,10 +282,6 @@ section#linhadotempo .tempo-img{
     background: black url(../imagens/anime/hitori.jpg) center bottom no-repeat;
     background-size: cover;
     margin-bottom: 5px;
-}
-section#linhadotempo > p{
-    margin-top: 10px;
-    font-size: 0.8em;
 }
 /* Seção de conhecer a banda */
 

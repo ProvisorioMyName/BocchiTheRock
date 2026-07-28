@@ -72,6 +72,12 @@ function selectTempo(id){
     let txt = document.getElementById('tempo-txt')
     let img = document.querySelector('.tempo-img')
 
+    let seta = document.getElementById('seta')
+    let tempoItem = document.querySelector('div.tempo-item')
+
+
+    tempoItem.style.display = 'block'
+    seta.style.display = 'block'
     num.innerText = tempo.numero
     til.innerText = tempo.titulo
     txt.innerText = tempo.texto

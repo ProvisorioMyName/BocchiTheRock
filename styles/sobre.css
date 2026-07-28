@@ -95,7 +95,7 @@ section#temas{
     margin-bottom: 10px;
 }
 .topic{
-    min-width: 140px;
+    min-width: 130px;
     height: 180px;
     border-radius: 15px;
     display: flex;
@@ -162,8 +162,8 @@ section#temas .vermelho{
 }
 
 .cards button{
-    min-width: 70px;
-    height: 90%;
+    min-width: 65px;
+    height: 70%;
     border: 2px solid var(--bocchi);
     display: flex;
     flex-direction: column;
@@ -172,7 +172,7 @@ section#temas .vermelho{
     border-radius: 10px;
     background-color: var(--fundo);
     color: white;
-    font-size: 10px;
+    font-size: 9px;
 }
 
 .cards .info-icon{
@@ -182,7 +182,7 @@ section#temas .vermelho{
     justify-content: center;
 }
 .cards img{
-    min-width: 35px;
+    min-width: 30px;
     height: 35px;
     object-fit: contain;
 }
@@ -211,7 +211,7 @@ section#temas .vermelho{
 
 section#linhadotempo{
     width: 100%;
-    min-height: 500px;
+    min-height: 90px;
     border: 2px solid var(--bocchi);
     background-color: var(--fundo);
     border-radius: 10px;
@@ -245,13 +245,15 @@ section#linhadotempo{
 section#linhadotempo  > i{
     color: var(--bocchi);
     margin-top: 10px;
+    display: none;
 }
 .tempo-item{
     width: 100%;
-    min-height: 370px;
+    min-height: 340px;
     border: 1px solid var(--bocchi);
     border-radius: 15px;
     padding: 20px;
+    display: none;
 }
 
 .tempo-titulo{
@@ -275,13 +277,12 @@ section#linhadotempo span{
 }
  .tempo-img{
     width: 100%;
-    height: 210px;
+    height: 150px;
     border: 1px solid var(--bocchi);
     border-radius: 20px;
     overflow: hidden;
-    background: black url(../imagens/anime/hitori.jpg) center bottom no-repeat;
+    background: black url(../imagens/anime/hitori.jpg) center no-repeat;
     background-size: cover;
-    margin-bottom: 5px;
 }
 /* Seção de conhecer a banda */
 
@@ -306,13 +307,13 @@ section#persons > p{
 }
 section#persons > h2{
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     text-shadow: 1px 1px 10px #ff4fa485;
 
 }
 .text{
     text-align: center;
-    font-size: 14px
+    font-size: 12px
 }
 .text > p > span{
     color: var(--bocchi);
@@ -341,13 +342,13 @@ section#persons > h2{
     padding: 5px;
 }
 .person-text > p{
-    font-size: 0.8em;
+    font-size: 0.7em;
     line-height: 1.5;
     padding-left: 15px;
 }
 .person-text h4{
     color: var(--cor);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     padding-left: 5px;
 }

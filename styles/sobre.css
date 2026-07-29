@@ -78,7 +78,7 @@ main > h1{
     padding-left: 25px;
 }
 main > p{
-    max-width: 250px;
+    width: 250px;
     font-size: 0.7rem;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.067);
     margin-bottom: 10px;
@@ -87,6 +87,8 @@ main > p{
 main > p > span{
     color: #FF4FA3;
 }
+
+
 /* Seção de temas */
 section#temas{
     display: grid;
@@ -121,6 +123,7 @@ section#temas{
     background: transparent var(--icone) no-repeat center;
     background-size: contain;
 }
+
 section#temas .rosa{
     --cor: var(--bocchi);
     --icone: url("../imagens/icones/graves.png");
@@ -177,9 +180,6 @@ section#temas .vermelho{
 
 .cards .info-icon{
     margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .cards img{
     min-width: 30px;
@@ -247,6 +247,9 @@ section#linhadotempo  > i{
     margin-top: 10px;
     display: none;
 }
+section#linhadotempo >i.ativo{
+    display: block;
+}
 .tempo-item{
     width: 100%;
     min-height: 340px;
@@ -254,6 +257,10 @@ section#linhadotempo  > i{
     border-radius: 15px;
     padding: 20px;
     display: none;
+}
+.tempo-item.ativo{
+    display: flex;
+    flex-direction: column;
 }
 
 .tempo-titulo{
@@ -277,7 +284,7 @@ section#linhadotempo span{
 }
  .tempo-img{
     width: 100%;
-    height: 150px;
+    height: 180px;
     border: 1px solid var(--bocchi);
     border-radius: 20px;
     overflow: hidden;

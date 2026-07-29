@@ -155,7 +155,7 @@ section#perfil {
     color: var(--bocchi);
     text-shadow: 0 0 5px #ff4fa48d;
     text-transform: uppercase;
-    font-size: 19px;
+    font-size: 17px;
 }
 
 .person-cargo {
@@ -164,7 +164,7 @@ section#perfil {
     height: 20px;
     margin: 10px 0px;
     color: var(--bocchi);
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 #inst2{
     display: none;
@@ -172,7 +172,7 @@ section#perfil {
 .person-cargo img {
     max-width: 20px;
     max-height: 20px;
-    margin-left: 5px;
+    margin-left: 2px;
 }
 
 

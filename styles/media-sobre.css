@@ -1,38 +1,134 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 450px) and ( max-width: 768px){
-    main > h1{
+@media screen and (min-width: 450px) and (max-width: 768px) {
+    main>h1 {
         font-size: 3.5rem;
     }
-    main > p{
+
+    main>p {
         max-width: 260px;
         font-size: 0.8rem;
     }
+
     /* Temas */
-    .topic > h2{
+    .topic>h2 {
         font-size: 19px;
     }
-    .topic > p{
+
+    .topic>p {
         font-size: 13px;
     }
 
     /* cards de info */
 
-    .cards button{
+    .cards button {
         min-width: 90px;
         font-size: 13px;
     }
+
     /* Conheça a banda */
 
-    section#persons > h2{
+    section#persons>h2 {
         font-size: 4rem;
     }
 
-    .person-text > p{
+    .person-text>p {
         font-size: 15px;
     }
 
-    .person-text > h5{
+    .person-text>h5 {
         font-size: 1.1em;
     }
+}
+
+@media screen and (min-width: 700px) {
+
+    body {
+        background: linear-gradient(to right,
+                rgba(0, 0, 0, 0.95) 10%,
+                rgba(0, 0, 0, 0.8) 30%,
+                rgba(0, 0, 0, 0.5) 55%,
+                rgba(0, 0, 0, 0.2) 85%,
+                rgba(0, 0, 0, 0.1) 100%),
+            url(../imagens/fundo-sobre.jpeg) center top no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    nav>a {
+        font-size: 1.1em;
+    }
+
+    .subtitulo {
+        font-size: 17px;
+    }
+
+    main>h1 {
+        font-size: 4rem;
+    }
+
+    main>p {
+        width: 380px;
+        font-size: .8em;
+    }
+
+    /* Seção de temas */
+
+    section#temas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .topic>p {
+        font-size: 13px;
+    }
+
+    /* seção de info */
+
+    section#linhadotempo i.ativo{
+        display: none;
+    }
+
+    .cards {
+        width: 100%;
+        height: 340px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .cards button {
+        min-width: 200px;
+        height: 150px;
+        font-size: 14px;
+    }
+
+    .cards .info-icon {
+        min-width: 55px;
+        height: 55px;
+    }
+
+    .cards img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tempo-item.ativo{
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        margin-top: 15px;
+        font-size: 1.5em;
+
+    }
+    .tempo-titulo {
+        flex: 1;
+    }
+
+    .tempo-img {
+        width: 50%;
+        height: 250px;
+    }
+
+
 }

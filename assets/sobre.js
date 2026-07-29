@@ -75,12 +75,10 @@ function selectTempo(id){
     let seta = document.getElementById('seta')
     let tempoItem = document.querySelector('div.tempo-item')
 
-
-    tempoItem.style.display = 'block'
-    seta.style.display = 'block'
+    tempoItem.classList.add('ativo')
+    seta.classList.add('ativo')
     num.innerText = tempo.numero
     til.innerText = tempo.titulo
     txt.innerText = tempo.texto
     img.style.backgroundImage = `url('${tempo.foto}')`
 }
-

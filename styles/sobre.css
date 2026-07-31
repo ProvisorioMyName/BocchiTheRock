@@ -178,9 +178,7 @@ section#temas .vermelho{
     font-size: 9px;
 }
 
-.cards .info-icon{
-    margin-bottom: 10px;
-}
+
 .cards img{
     min-width: 30px;
     height: 35px;
@@ -301,18 +299,18 @@ section#persons{
     border-radius: 10px;
     background-color: var(--fundo);
     padding: 15px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 } 
-section#persons > p{
+.persons-text{
+    text-align: center;
+}
+.persons-text > p{
     color: var(--bocchi);
     text-transform: uppercase;
     font-weight: 300;
     font-size: 1.5em;
     text-shadow: 1px 1px 5px #ff4fa481;
 }
-section#persons > h2{
+.persons-text > h2{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3.2rem;
     text-shadow: 1px 1px 10px #ff4fa485;
@@ -320,17 +318,22 @@ section#persons > h2{
 }
 .text{
     text-align: center;
-    font-size: 12px
+    font-size: 12px;
+    margin-bottom: 10px;
 }
 .text > p > span{
     color: var(--bocchi);
+}
+.box-persons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
 }
  .containerperson{
     width: 100%;
     min-height: 135px;
     border-radius: 15px;
     border: 1px solid var(--cor);
-    margin: 10px 0px;
     display: flex;
     overflow: hidden;
 }
@@ -387,8 +390,12 @@ section#persons a{
     box-shadow: 0 0 10px #ff4fa4a1;
     padding: 10px;
     text-transform: uppercase;
-    margin-top: 5px;
 }
 #persons a span{
     color: var(--bocchi);
+}
+
+#persons .button{
+    text-align: center;
+    margin-top: 35px;
 }

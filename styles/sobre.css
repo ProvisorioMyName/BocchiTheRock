@@ -155,7 +155,6 @@ section#temas .vermelho{
 }
 /* seção das informações */
 
-
 .cards{
     width: 100%;
     height: 100px;
@@ -177,7 +176,9 @@ section#temas .vermelho{
     color: white;
     font-size: 9px;
 }
-
+  .cards .info-icon {
+        margin-bottom: 5px;
+    }
 
 .cards img{
     min-width: 30px;
@@ -293,7 +294,7 @@ section#linhadotempo span{
 
 section#persons{
     width: 100%;
-    min-height: 850px;
+    height: auto;
     margin-top: 20px;
     border: 1px solid var(--bocchi);
     border-radius: 10px;
@@ -365,8 +366,7 @@ section#persons{
 .person-text h5{
     font-weight: 500;
     font-size: .9em;
-    margin: 5px 0px;
-    padding-left: 15px;
+    margin: 5px 0px 10px 15px;
 }
 
 section#persons .rosa{
@@ -397,5 +397,5 @@ section#persons a{
 
 #persons .button{
     text-align: center;
-    margin-top: 35px;
+    margin: 35px 0px;
 }
